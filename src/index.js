@@ -1,5 +1,6 @@
 import './index.css';
-import App from './App';
+import App_2 from './App_2';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ReactDOM from 'react-dom';
 
@@ -9,5 +10,5 @@ import ReactDOM from 'react-dom';
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-
-ReactDOM.render(<App />, document.querySelector('#root'));
+// ReactDOM.render(<App />, document.querySelector('#root'));
+ReactDOM.render(<App_2 />, document.querySelector('#root'));

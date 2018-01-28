@@ -22,6 +22,11 @@ import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
+import Slider from '@material-ui/core/Slider';
+
+function valuetext(value) {
+  return `${value}°C`;
+}
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -137,6 +142,9 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
+  margin: {
+    height: theme.spacing(3),
+  },
 }));
 
 export default function ComplexGrid() {
@@ -162,9 +170,11 @@ export default function ComplexGrid() {
             VERITAS
           </Typography>
           <div className={classes.search}>
+            
             <div className={classes.searchIcon}>
               <SearchIcon />
             </div>
+            
             <InputBase
               placeholder="Search…"
               classes={{
@@ -173,6 +183,7 @@ export default function ComplexGrid() {
               }}
               inputProps={{ 'aria-label': 'search' }}
             />
+            
             <FormControl className={classes.formControl}>
               <InputLabel id="demo-simple-select-helper-label">Language</InputLabel>
               <Select
@@ -187,18 +198,18 @@ export default function ComplexGrid() {
               <FormHelperText></FormHelperText>
             </FormControl>
             
+            </div>
             
-
-          </div>
-          <Button className={classes.loginButton}>
+            <Button className={classes.loginButton}>
               <b>Login</b>
             </Button>
+        
         </Toolbar>
-            </AppBar>
+      </AppBar>
       
       
       
-            <Paper className={classes.paper} elevation={3}>
+      <Paper className={classes.paper} elevation={3}>
         <Grid container 
           spacing={2}
           >
@@ -211,7 +222,7 @@ export default function ComplexGrid() {
                 <b>2020 Hathras Gang Rape and Murder Case</b>
                 </Typography>
                 <Typography variant="body2" gutterBottom>
-                19 Oct 2020, Monday
+                  19 Oct 2020, Monday
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
                                   On 14 September 2020, a 19-year-old Dalit woman was gang-raped in Hathras district, Uttar Pradesh, India. After fighting for 
@@ -244,7 +255,7 @@ export default function ComplexGrid() {
       <Paper className={classes.paper} elevation={3}>
         <Grid container 
           spacing={2}
-          >
+        >
           <Grid item>
           </Grid>
           <Grid item xs={12} sm container>
