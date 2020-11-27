@@ -1,2 +1,2 @@
 # proto-react
-Prototype for Web App
+Prototype for Web App Development
