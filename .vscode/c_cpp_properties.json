@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/ankit/uav_ugv_colab/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/opt/ros/kinetic/include/**",
+        "/home/ankit/uav_ugv_colab/src/custom_msgs/include/**",
+        "/home/ankit/uav_ugv_colab/src/hector_uav_msgs/include/**",
+        "/home/ankit/uav_ugv_colab/src/mbzirc_control/include/**",
+        "/home/ankit/uav_ugv_colab/src/mission_planner/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ]
+}
