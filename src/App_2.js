@@ -23,9 +23,13 @@ import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import Slider from '@material-ui/core/Slider';
-
 import {Link } from "react-router-dom";
 
+import Stepper from '@material-ui/core/Stepper';
+import Step from '@material-ui/core/Step';
+import StepButton from '@material-ui/core/StepButton';
+import StepLabel from '@material-ui/core/StepLabel';
+import StepContent from '@material-ui/core/StepContent';
 
 function valuetext(value) {
   return `${value}°C`;
@@ -147,38 +151,73 @@ const useStyles = makeStyles((theme) => ({
     width: "75%",
     borderRadius: 24,
     opacity: 1,
+  },
+  button: {
+    marginRight: theme.spacing(1),
+  },
+  completed: {
+    display: 'inline-block',
+  },
+  instructions: {
+    marginTop: theme.spacing(1),
+    marginBottom: theme.spacing(1),
+  },
+  iconStepper: {
+    fontSize: '25%',
+    width: '50',
+  },
+  stepContent: {
+    textAlign: 'center',
+    border: '1px solid',
   }
 }));
+
+function getSteps() {
+  return ['14', '15','16','18','20','22'];
+}
+
+const label = ['14', '15','16','18','20','22', ];
+const month = ['Sep']
+const content = [
+  'alpha', 'beta', 'gamma', 'delta', 'epsilon', 'eta'
+]
+
+function getStepContent(step) {
+  return content[step]
+};
+
+
+  
 
 
 const imp_dates = [
   {
     value: 0,
-    label: '0°C',
+    label: '14 Sep',
   },
   {
     value: 10,
-    label: '20°C',
+    label: '20 Sep',
   },
   {
     value: 20,
-    label: '37°C',
+    label: '22 Sep',
   },
   {
     value: 30,
-    label: '100°C',
+    label: '24 Sep',
   },
   {
     value: 40,
-    label: '100°C',
+    label: '26 Sep',
   },
   {
     value: 50,
-    label: '100°C',
+    label: '28 Sep',
   },
   {
     value: 60,
-    label: '100°C',
+    label: '29 Sep',
   },
   {
     value: 70,
@@ -201,6 +240,13 @@ export default function ComplexGrid() {
   const [lang, setLang] = React.useState('');
   const handleChange = (event) => {
     setLang(event.target.value);
+  };
+  const [activeStep, setActiveStep] = React.useState(0);
+  const [completed, setCompleted] = React.useState({});
+  const steps = getSteps();
+
+  const handleStep = (step) => () => {
+    setActiveStep(step);
   };
 
   return (
@@ -259,7 +305,7 @@ export default function ComplexGrid() {
       
       <Grid container spacing={3}>
         <Grid item xs={6}>
-          <Paper className={classes.paper}>xs=6
+          <Paper className={classes.paper}>
           <Typography gutterBottom variant="subtitle1" variant="h5" >
             <b>2020 Hathras Gang Rape and Murder Case </b> <br></br>
        </Typography>
@@ -295,30 +341,22 @@ export default function ComplexGrid() {
           </Paper>
         </Grid>
       </Grid>
-      
-      <Grid
-        container
-        // direction="column"
-        alignItems="center"
-        justify="center"
-      > 
-      <Grid item xs = {12} >
-        <Typography id="discrete-slider" gutterBottom>
-          Timeline
-        </Typography>
-        <Slider className={classes.rail}
-          defaultValue={30}
-          getAriaValueText={valuetext}
-          aria-labelledby="discrete-slider"
-          valueLabelDisplay="auto"
-          step={10}
-          marks={imp_dates}
-          min={0}
-          max={100}
-        />
-      </Grid>
-      </Grid>
-     
+
+      <div>
+      <Stepper alternativeLabel={true} nonLinear activeStep={activeStep}>
+        {steps.map((label, index) => (
+          <Step key={label} index={label-1} className={classes.iconStepper} >
+            <StepButton onClick={handleStep(index)} completed={completed[index]} className={classes.button}>
+              {month}
+            </StepButton>
+            {/* <stepContent>
+            <Typography>{month}</Typography>
+            </stepContent> */}
+          </Step>
+        ))}
+      </Stepper>
+      <Typography className={classes.stepContent}>{getStepContent(activeStep)}</Typography>
+    </div>
     </div>
   );
 }

@@ -24,7 +24,7 @@
   color: white;
 }
 
-::ng-deep .MuiPaper-elevation4 {
+ng-deep .MuiPaper-elevation4 {
     box-shadow: 0px !important;
 }
 .App-link {
