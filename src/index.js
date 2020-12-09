@@ -1,9 +1,9 @@
 import './index.css';
 import App_2 from './App_2';
-// import App from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ReactDOM from 'react-dom';
-
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
@@ -11,4 +11,14 @@ import ReactDOM from 'react-dom';
 reportWebVitals();
 
 // ReactDOM.render(<App />, document.querySelector('#root'));
-ReactDOM.render(<App_2 />, document.querySelector('#root'));
+// ReactDOM.render(<App_2 />, document.querySelector('#root'));
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+    <BrowserRouter>
+     <Switch>
+      <Route exact path="/" component={App} />
+      <Route path="/app2" component={App_2} />
+    </Switch>
+    </BrowserRouter>,
+    rootElement
+  );

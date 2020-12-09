@@ -24,6 +24,8 @@ import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import Slider from '@material-ui/core/Slider';
 
+import {Link } from "react-router-dom";
+
 function valuetext(value) {
   return `${value}°C`;
 }
@@ -153,6 +155,7 @@ export default function ComplexGrid() {
   const handleChange = (event) => {
     setLang(event.target.value);
   };
+  const preventDefault = (event) => event.preventDefault();
 
   return (
     <div className={classes.root}>
@@ -240,9 +243,13 @@ export default function ComplexGrid() {
                 </Typography>
               </Grid>
               <Grid item>
+                
+                <Link color='inherit' to='/app2'>
                 <button variant="contained" className={classes.readButton}>
                   Read Full Story
-                </button>
+                  </button>
+                </Link>
+                
               </Grid>
             </Grid>
 
@@ -310,7 +317,7 @@ export default function ComplexGrid() {
             </ButtonBase>
           </Grid>
         </Grid>
-      </Paper>
+      </Paper>  
     </div>
   );
 }
