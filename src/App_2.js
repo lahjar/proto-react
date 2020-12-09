@@ -24,6 +24,9 @@ import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import Slider from '@material-ui/core/Slider';
 
+import {Link } from "react-router-dom";
+
+
 function valuetext(value) {
   return `${value}°C`;
 }
@@ -139,7 +142,59 @@ const useStyles = makeStyles((theme) => ({
   margin: {
     height: theme.spacing(3),
   },
+  rail: {
+    height: '2px',
+    width: "75%",
+    borderRadius: 24,
+    opacity: 1,
+  }
 }));
+
+
+const imp_dates = [
+  {
+    value: 0,
+    label: '0°C',
+  },
+  {
+    value: 10,
+    label: '20°C',
+  },
+  {
+    value: 20,
+    label: '37°C',
+  },
+  {
+    value: 30,
+    label: '100°C',
+  },
+  {
+    value: 40,
+    label: '100°C',
+  },
+  {
+    value: 50,
+    label: '100°C',
+  },
+  {
+    value: 60,
+    label: '100°C',
+  },
+  {
+    value: 70,
+    label: '100°C',
+  },
+  {
+    value: 80,
+    label: '100°C',
+  },
+  {
+    value: 90,
+    label: '100°C',
+  },
+
+];
+
 
 export default function ComplexGrid() {
   const classes = useStyles();
@@ -202,12 +257,11 @@ export default function ComplexGrid() {
       </AppBar>
       
       
-      
       <Grid container spacing={3}>
         <Grid item xs={6}>
           <Paper className={classes.paper}>xs=6
           <Typography gutterBottom variant="subtitle1" variant="h5" >
-       <b>2020 Hathras Gang Rape and Murder Case</b><br></br>
+            <b>2020 Hathras Gang Rape and Murder Case </b> <br></br>
        </Typography>
        <Typography variant="caption">
            19 Oct 2020, Monday
@@ -231,23 +285,40 @@ export default function ComplexGrid() {
           </Paper>
         </Grid>
         <Grid item xs={3}>
-          <Paper className={classes.paper}>xs=3</Paper>
+          <Paper className={classes.paper}>
+            <Typography display='flex'>
+             <Link color='inherit'>[1] The Wire</Link> <br></br>
+             <Link color='inherit'>[2] TIMES NOW </Link> <br></br>
+             <Link color='inherit'>[3] Hindustan Times</Link> <br></br>
+             <Link color='inherit'>[4] Scroll</Link> <br></br>
+            </Typography>
+          </Paper>
         </Grid>
       </Grid>
       
-      <Typography id="discrete-slider" gutterBottom>
-        Timeline
-      </Typography>
-      <Slider
-        defaultValue={30}
-        getAriaValueText={valuetext}
-        aria-labelledby="discrete-slider"
-        valueLabelDisplay="auto"
-        step={10}
-        marks
-        min={10}
-        max={110}
-      />
+      <Grid
+        container
+        // direction="column"
+        alignItems="center"
+        justify="center"
+      > 
+      <Grid item xs = {12} >
+        <Typography id="discrete-slider" gutterBottom>
+          Timeline
+        </Typography>
+        <Slider className={classes.rail}
+          defaultValue={30}
+          getAriaValueText={valuetext}
+          aria-labelledby="discrete-slider"
+          valueLabelDisplay="auto"
+          step={10}
+          marks={imp_dates}
+          min={0}
+          max={100}
+        />
+      </Grid>
+      </Grid>
+     
     </div>
   );
 }
