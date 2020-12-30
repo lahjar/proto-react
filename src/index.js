@@ -1,6 +1,7 @@
 import './index.css';
 import App_2 from './App_2';
 import App from './App';
+// import timeline from './timeline';
 import reportWebVitals from './reportWebVitals';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -18,6 +19,7 @@ ReactDOM.render(
      <Switch>
       <Route exact path="/" component={App} />
       <Route path="/app2" component={App_2} />
+      {/* <Route path="/timeline" component={timeline} /> */}
     </Switch>
     </BrowserRouter>,
     rootElement
