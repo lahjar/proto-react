@@ -25,10 +25,6 @@ import MenuItem from '@material-ui/core/MenuItem';
 
 import {Link } from "react-router-dom";
 
-function valuetext(value) {
-  return `${value}°C`;
-}
-
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -125,24 +121,6 @@ const useStyles = makeStyles((theme) => ({
   selectEmpty: {
     marginTop: theme.spacing(2),
   },
-  inputRoot: {
-    color: 'inherit',
-  },
-  inputInput: {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-    transition: theme.transitions.create('width'),
-    width: '0%',
-    marginTop:theme.spacing(3),
-
-    [theme.breakpoints.up('sm')]: {
-      width: '0ch',
-      '&:focus': {
-        width: '20ch',
-      },
-    },
-  },
   margin: {
     height: theme.spacing(3),
   },
@@ -154,7 +132,6 @@ export default function ComplexGrid() {
   const handleChange = (event) => {
     setLang(event.target.value);
   };
-  const preventDefault = (event) => event.preventDefault();
 
   return (
     <div className={classes.root}>
@@ -169,7 +146,9 @@ export default function ComplexGrid() {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            VERITAS
+            <Link to="./" style={{textDecoration: 'inherit', color: 'black'}}>
+              {'VERITAS'}
+            </Link>
           </Typography>
           <div className={classes.search}>
             

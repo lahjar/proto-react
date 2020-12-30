@@ -3,9 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import ButtonBase from '@material-ui/core/ButtonBase';
-import picLabel1 from './hathras.png';
-import picLabel2 from './CAA.png';
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -22,18 +19,13 @@ import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
-import Slider from '@material-ui/core/Slider';
 import {Link } from "react-router-dom";
 
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
 import StepButton from '@material-ui/core/StepButton';
-import StepLabel from '@material-ui/core/StepLabel';
-import StepContent from '@material-ui/core/StepContent';
-
-function valuetext(value) {
-  return `${value}°C`;
-}
+// import StepLabel from '@material-ui/core/StepLabel';
+// import StepContent from '@material-ui/core/StepContent';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -125,24 +117,7 @@ const useStyles = makeStyles((theme) => ({
   selectEmpty: {
     marginTop: theme.spacing(2),
   },
-  inputRoot: {
-    color: 'inherit',
-  },
-  inputInput: {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-    transition: theme.transitions.create('width'),
-    width: '0%',
-    marginTop:theme.spacing(3),
 
-    [theme.breakpoints.up('sm')]: {
-      width: '0ch',
-      '&:focus': {
-        width: '20ch',
-      },
-    },
-  },
   margin: {
     height: theme.spacing(3),
   },
@@ -262,7 +237,9 @@ export default function ComplexGrid() {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            VERITAS
+          <Link to="./" style={{textDecoration: 'inherit', color: 'black'}}>
+              {'VERITAS'}
+            </Link>
           </Typography>
           <div className={classes.search}>
             
