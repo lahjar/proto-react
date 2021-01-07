@@ -1,7 +1,6 @@
 import './index.css';
 import App_2 from './App_2';
 import App from './App';
-// import timeline from './timeline';
 import reportWebVitals from './reportWebVitals';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
