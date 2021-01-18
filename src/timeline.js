@@ -1,21 +1,17 @@
 import React from 'react';
 import HorizontalTimeline from "react-horizontal-timeline";
+import Box from '@material-ui/core/Box';
+import Typography from '@material-ui/core/Typography';
+import Card from '@material-ui/core/Card';
 
-
-const VALUES = ["2018-03-22", "2018-03-23"];
-
-const EXAMPLE = [
+const data = [
   {
-    data: "2018-03-22",
-    status: "status",
-    statusB: "Ready for Dev",
-    statusE: "In Progress"
+    date: "2018-09-22",
+    content: "status",
   },
   {
-    data: "2018-03-23",
-    status: "status",
-    statusB: "In Progress",
-    statusE: "Done"
+    date: "2018-09-23",
+    content: "status",
   }
 ];
 
@@ -24,16 +20,14 @@ export default class Timeline extends React.Component {
       super(props);
       this.state = {
         curIdx: 0,      
-        prevIdx: -1
       };
     }
   
     //state = { value: 0, previous: 0 };
   
     render() {    
-      const {curIdx, prevIdx} = this.state;
-      const curStatus = EXAMPLE[curIdx].statusB;
-      const prevStatus = prevIdx >= 0 ? EXAMPLE[prevIdx].statusB : '';
+      const {curIdx} = this.state;
+      const daily_content = data[curIdx].content;
   
       return (
         <div>
@@ -58,14 +52,17 @@ export default class Timeline extends React.Component {
                 const curIdx = this.state.curIdx;
                 this.setState({ curIdx: index, prevIdx: curIdx });
               }}            
-              values={EXAMPLE.map(x => x.data)}
+              values={data.map(x => x.date)}
             />
           </div>
-          <div className="text-center">
-            {/* any arbitrary component can go here */}
-            {curStatus} - {prevStatus}
+          <div>
+              <Box display="flex"
+  justifyContent="center"
+  alignItems="center"
+  minHeight="10vh" >{daily_content}</Box>
+
+            </div>
           </div>
-        </div>
       );
     }
   }
