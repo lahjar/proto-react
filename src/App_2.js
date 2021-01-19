@@ -5,24 +5,13 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import InputBase from '@material-ui/core/InputBase';
 import {fade} from '@material-ui/core/styles';  
-import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
 import { white } from 'material-ui/styles/colors';
-import { Button } from '@material-ui/core';
 
-import InputLabel from '@material-ui/core/InputLabel';
-import FormHelperText from '@material-ui/core/FormHelperText';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
-import MenuItem from '@material-ui/core/MenuItem';
 import {Link } from "react-router-dom";
 
 import Timeline from './timeline';
+import Appbar from './appbar'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -158,59 +147,7 @@ export default function ComplexGrid() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color='inherit' elevation={0}>
-        <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="open drawer"
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography className={classes.title} variant="h6" noWrap>
-          <Link to="./" style={{textDecoration: 'inherit', color: 'black'}}>
-              {'VERITAS'}
-            </Link>
-          </Typography>
-          <div className={classes.search}>
-            
-            <div className={classes.searchIcon}>
-              <SearchIcon />
-            </div>
-            
-            <InputBase
-              placeholder="Search…"
-              classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput,
-              }}
-              inputProps={{ 'aria-label': 'search' }}
-            />
-            
-            <FormControl className={classes.formControl}>
-              <InputLabel id="demo-simple-select-helper-label">Language</InputLabel>
-              <Select
-                labelId="demo-simple-select-helper-label"
-                id="demo-simple-select-helper"
-                value={lang}
-                onChange={handleChange}
-              >
-                <MenuItem value={10}>English</MenuItem>
-                <MenuItem value={20}>Hindi</MenuItem>
-              </Select>
-              <FormHelperText></FormHelperText>
-            </FormControl>
-            
-            </div>
-            
-            <Button className={classes.loginButton}>
-              <b>Login</b>
-            </Button>
-        
-        </Toolbar>
-      </AppBar>
-      
+      <Appbar/>
       
       <Grid container spacing={3}>
         <Grid item xs={6}>

@@ -6,7 +6,14 @@ module.exports = {
   },
    modules: {
     loaders: [
-      { test: /\.html$/, loader: 'html' }
+      { test: /\.html$/, loader: 'html' },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      }
     ]
   }
 };
