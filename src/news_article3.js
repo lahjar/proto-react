@@ -22,12 +22,10 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     padding: theme.spacing(2),
-    // margin: 'auto',
     maxWidth: 1200,
-    maxHeight: 600,
-    // marginTop: 60,
-    marginLeft: 120,
-    borderRadius: 12,
+    maxHeight: 250,
+    marginLeft: 100,
+    overflow: 'auto'
 
   },
   loginButton: {
@@ -160,13 +158,15 @@ export default function ComplexGrid() {
       
       <Grid container spacing={3}>
         <Grid item xs={6}>
-          <Paper className={classes.paper}>
-          <Typography gutterBottom variant="subtitle1" variant="h5" >
+        <Paper className={classes.paper} elevation={0}>
+        <Typography gutterBottom variant="subtitle1" variant="h5" >
             <b>{article.headline}</b> <br></br>
        </Typography>
        <Typography variant="caption">
            {article.date}
        </Typography>
+       </Paper>
+          <Paper className={classes.paper}>
        <Typography variant="body2" color="textSecondary">
          <ul>
           <li>{facts}</li>

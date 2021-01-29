@@ -23,8 +23,8 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     maxWidth: 1200,
-    maxHeight: 300,
-    marginLeft: 120,
+    maxHeight: 250,
+    marginLeft: 100,
     overflow: 'auto'
 
   },
