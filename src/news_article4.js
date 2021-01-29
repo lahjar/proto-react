@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     // margin: 'auto',
     maxWidth: 1200,
+    maxHeight: 600,
     // marginTop: 60,
     marginLeft: 120,
     borderRadius: 12,
@@ -181,11 +182,6 @@ export default function ComplexGrid() {
                 <Link color='inherit' to={article.links.url[index]}>{article.links.name[index]}</Link>
               </li>
              })}
-              {/* {article.links.name} */}
-             {/* <Link color='inherit'>[1] The Wire</Link> <br></br>
-             <Link color='inherit'>[2] TIMES NOW </Link> <br></br>
-             <Link color='inherit'>[3] Hindustan Times</Link> <br></br>
-             <Link color='inherit'>[4] Scroll</Link> <br></br> */}
             </Typography>
           </Paper>
         </Grid>
