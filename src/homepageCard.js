@@ -121,7 +121,7 @@ const HomepageCard = (props) => {
     const classes = useStyles();
     const article = eval('news_article' + props.id);
     const path = '/' + 'news_article' + props.id;
-    const img_src = eval('piclabel' + props.id);
+    // const img_src = eval('piclabel' + props.id);
     return (
         <div className={classes.root}>
         <Paper className={classes.paper} elevation={3}>
@@ -150,7 +150,7 @@ const HomepageCard = (props) => {
               </Grid>
             </Grid>
             <ButtonBase className={classes.image}>
-              <img className={classes.img} src={img_src} />
+              <img className={classes.img} src={piclabel1} />
             </ButtonBase>
           </Grid>
         </Grid>

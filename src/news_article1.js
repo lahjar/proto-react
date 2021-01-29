@@ -13,6 +13,9 @@ import {Link } from "react-router-dom";
 import Timeline from './timeline';
 import Appbar from './appbar'
 
+const {news_article1} = require('./database.js')
+const article = news_article1;
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -143,7 +146,12 @@ export default function ComplexGrid() {
   const handleChange = (event) => {
     setLang(event.target.value);
   };
-
+  const fact_list = article.facts; 
+  
+  const facts = fact_list.map((listItems)=>{ 
+      return <li>{listItems}</li>; 
+  }); 
+  
 
   return (
     <div className={classes.root}>
@@ -153,25 +161,14 @@ export default function ComplexGrid() {
         <Grid item xs={6}>
           <Paper className={classes.paper}>
           <Typography gutterBottom variant="subtitle1" variant="h5" >
-            <b>2020 Hathras Gang Rape and Murder Case </b> <br></br>
+            <b>{article.headline}</b> <br></br>
        </Typography>
        <Typography variant="caption">
-           19 Oct 2020, Monday
+           {article.date}
        </Typography>
        <Typography variant="body2" color="textSecondary">
          <ul>
-         <li>There are some news sources which reported that the victim was cremated in the middle of the night without the 
-             permission of the family and the authorities are misleading people saying the family had been present at the funeral. [1]<br></br><br></br>
-         </li>
-         <li>There are some news sources which reported that the police had taken permissions from the family prior to 
-             cremation and the family was now lying. [2]<br></br><br></br>
-        </li>
-         <li>Some news sources reported that the UP administration and police have clearly established using forensic 
-             evidence that no rape occured. [3]<br></br><br></br>
-         </li>
-         <li>Some news have reported that the administration is pushing false propoganda and questioned the analysis of “no 
-             rape” with the victims official statement mentioning rape. [4]<br></br><br></br>
-         </li>
+          <li>{facts}</li>
          </ul>
        </Typography>
           </Paper>
@@ -179,10 +176,16 @@ export default function ComplexGrid() {
         <Grid item xs={3}>
           <Paper className={classes.paper}>
             <Typography display='flex'>
-             <Link color='inherit'>[1] The Wire</Link> <br></br>
+            {article.links.name.map((item,index)=>{
+              return <li key={index}>
+                <Link color='inherit' to={article.links.url[index]}>{article.links.name[index]}</Link>
+              </li>
+             })}
+              {/* {article.links.name} */}
+             {/* <Link color='inherit'>[1] The Wire</Link> <br></br>
              <Link color='inherit'>[2] TIMES NOW </Link> <br></br>
              <Link color='inherit'>[3] Hindustan Times</Link> <br></br>
-             <Link color='inherit'>[4] Scroll</Link> <br></br>
+             <Link color='inherit'>[4] Scroll</Link> <br></br> */}
             </Typography>
           </Paper>
         </Grid>
