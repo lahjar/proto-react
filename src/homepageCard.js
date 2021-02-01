@@ -16,6 +16,7 @@ import piclabel4 from './assets/news_article4.png';
 
 const { news_article1, news_article2, news_article3, news_article4 } = require('./database.js')
 
+
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
@@ -121,7 +122,8 @@ const HomepageCard = (props) => {
     const classes = useStyles();
     const article = eval('news_article' + props.id);
     const path = '/' + 'news_article' + props.id;
-    // const img_src = eval('piclabel' + props.id);
+    // const img_src = article.img;
+    const img_src = eval('piclabel' + props.id);
     return (
         <div className={classes.root}>
         <Paper className={classes.paper} elevation={3}>
@@ -150,7 +152,7 @@ const HomepageCard = (props) => {
               </Grid>
             </Grid>
             <ButtonBase className={classes.image}>
-              <img className={classes.img} src={piclabel1} />
+              <img className={classes.img} src={require('./hathras.png')} />
             </ButtonBase>
           </Grid>
         </Grid>
