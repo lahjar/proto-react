@@ -68,7 +68,7 @@ export default class Timeline extends React.Component {
             />
           </div>
           <div style={{ display:'flex', justifyContent:'center' }}>
-          <Card style={{width: '25rem', backgroundColor:'#1E1E1E'}}>
+          <Card style={{width: '35rem', backgroundColor:'#1E1E1E'}}>
           <CardContent>
             <Typography style={{color: '#F5F5F5', fontWeight: 'normal'}}>
               {daily_content}
