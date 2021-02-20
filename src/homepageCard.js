@@ -4,15 +4,19 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import { makeStyles } from '@material-ui/core/styles';
-
 import { white } from 'material-ui/styles/colors';
 import {fade} from '@material-ui/core/styles';  
-
 import {Link } from "react-router-dom";
-import piclabel1 from './assets/news_article1.png';
-import piclabel2 from './assets/news_article2.png';
-import piclabel3 from './assets/news_article3.png';
-import piclabel4 from './assets/news_article4.png';
+
+import pic1 from './assets/news_article1.png';
+import pic2 from './assets/news_article2.png';
+import pic3 from './assets/news_article3.png';
+import pic4 from './assets/news_article4.png';
+
+const piclabel1 = pic1;
+const piclabel2 = pic2;
+const piclabel3 = pic3;
+const piclabel4 = pic4;
 
 const { news_article1, news_article2, news_article3, news_article4 } = require('./database.js')
 
@@ -122,8 +126,8 @@ const HomepageCard = (props) => {
     const classes = useStyles();
     const article = eval('news_article' + props.id);
     const path = '/' + 'news_article' + props.id;
-    const img_src = article.img;
-    // const img_src = eval('piclabel' + props.id);
+    // const img_src = article.img;
+    const img_src = eval('piclabel' + props.id); 
     return (
         <div className={classes.root}>
         <Paper className={classes.paper} elevation={3}>
@@ -152,7 +156,7 @@ const HomepageCard = (props) => {
               </Grid>
             </Grid>
             <ButtonBase className={classes.image}>
-              <img className={classes.img} src={piclabel1} />
+              <img className={classes.img} src={img_src} />
             </ButtonBase>
           </Grid>
         </Grid>
@@ -162,3 +166,4 @@ const HomepageCard = (props) => {
 }
 
 export default HomepageCard;
+// module.exports = img_src;

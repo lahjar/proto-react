@@ -1,6 +1,6 @@
 var news_article1 = {
     headline: '2020 Hathras Gang Rape and Murder Case',
-    date: Date(2020, 9, 19),
+    date: Date(2020, 10, 19),
     content:`On 14 September 2020, a 19-year-old Dalit woman was gang-raped in Hathras district, Uttar Pradesh, India. After fighting for 
     her life for two weeks, she died in a Delhi hospital. Initially, it was reported that one accused had tried to kill her, though later 
     in her statement to the magistrate, the victim named four accused as having raped her. 
@@ -39,20 +39,32 @@ var news_article1 = {
     img:'/home/ankit/git/proto-react/src/assets/hathras.png',
     timeline: [
         {
-          date: "2018-09-22",
+          date: "2020-09-14",
+          content: "",
+        },
+        {
+          date: "2020-09-20",
+          content: "",
+        },
+        {
+          date: "2020-09-22",
           content: "The police finally had registered a complaint on 20 Sep. Initially registered as assault and SC/ST Act case, gangrape was later added to the list of charges after the police were able to take an official statement from the victim. In her three recorded statements she mentioned that she was raped and strangulated when she tried to resist. She was later shifted to Safdarjung Hospital after her condition worsened.",
         },
         {
-          date: "2018-09-23",
-          content: "The victim died succumbing to her injuries in Sajdarjung Hospital, New Delhi. The autopsy registered the cause of death as “injury to the cervical spine by blunt force trauma”. The victim was cremated at 2:30am by the UP  Police. The Allahabad High Court took suo moto cognizance of the case asking the victim’s family, the DM and the SP to appear before it.",
+          date: "2020-09-24",
+          content: "",
         },
         {
-          date: "2018-09-24",
-          content: "The police finally had registered a complaint on 20 Sep. Initially registered as assault and SC/ST Act case, gangrape was later added to the list of charges after the police were able to take an official statement from the victim. In her three recorded statements she mentioned that she was raped and strangulated when she tried to resist. She was later shifted to Safdarjung Hospital after her condition worsened.",
+          date: "2020-09-26",
+          content: "",
         },
         {
-          date: "2018-09-25",
-          content: "The victim died succumbing to her injuries in Sajdarjung Hospital, New Delhi. The autopsy registered the cause of death as “injury to the cervical spine by blunt force trauma”. The victim was cremated at 2:30am by the UP  Police. The Allahabad High Court took suo moto cognizance of the case asking the victim’s family, the DM and the SP to appear before it.",
+          date: "2020-09-28",
+          content: "",
+        },
+        {
+          date: "2020-09-29",
+          content: "The victim died succumbing to her injuries in Sajdarjung Hospital, New Delhi. The autopsy registered the cause of death as “injury to the cervical spine by blunt force trauma”. The victim was cremated at 2:30am by the UP Police. The Allahabad High Court took suo moto cognizance of the case asking the victim’s family, the DM and the SP to appear before it.",
         },
       ],
     id: 12345,
@@ -61,7 +73,7 @@ var news_article1 = {
 
 var news_article2 = {
     headline: 'CAA-NRC Protests',
-    date: Date(2020, 9, 19),
+    date: Date(2020, 10, 19),
     content:`The Citizenship Amendment Act protests (CAA Protests) are a series of nationwide protests that occurred after the 
     Government of India introduced and subsequently enacted the Citizenship Amendment Act in the parliament. The protests 
     started primarily in Assam on 4 December 2019 after the bill was introduced in the Parliament. Later, protests erupted across 
@@ -105,31 +117,46 @@ var news_article2 = {
         fueled by BJP supporters. [7] `
      ],
      links: {
-        name: ['The Wire','Times Now', 'Hindustan Times', 'Scroll'],
+        name: ['The Economic Times','REPUBLIC World', 'Scroll', 'Hindustan Times', 'India Today', 'News 18', 'NDTV'],
         url: [
-                'https://thewire.in/media/misleading-video-hathras-victim-family-funeral',
-                'https://www.timesnownews.com/india/article/hathras-gang-rape-case-adg-claims-police-took-consent-from-victims-family-before-funeral/660546',
-                'https://www.hindustantimes.com/india-news/hathras-gang-rape-case-samples-sent-to-agra-forensic-lab-preliminary-report-doesn-t-confirm-rape-claim-police/story-f22lpDy1a6PMvFrHSPcVqL.html',
-                'https://scroll.in/article/974972/hathras-case-this-is-what-is-wrong-with-the-no-sperm-no-rape-line-being-pushed-by-up-police'
+          'https://economictimes.indiatimes.com/news/politics-and-nation/caa-protests-in-assam-why-it-is-different-from-the-rest-of-the-country/articleshow/72844673.cms?from=mdr',
+          'https://www.republicworld.com/india-news/general-news/protestors-set-bus-on-fire-delhi-police-pro-says-on-jamia-violence.html',
+          'https://scroll.in/article/946933/delhi-police-were-uncontrollable-as-they-unleashed-violence-at-jamia-millia-islamia-students-say',
+          'https://www.hindustantimes.com/delhi-news/10-arrested-in-connection-with-jamia-violence-no-students-among-them-say-delhi-police/story-c6O2OdCfRHRpggH4IoTzwK.html',
+          'https://www.indiatoday.in/mail-today/story/citizenship-protests-spread-to-bengal-protesters-torch-5-trains-3-railway-stations-damage-property-1628370-2019-12-15',
+          'https://www.news18.com/news/politics/reports-of-bjp-supporters-changing-clothes-to-attack-train-in-murshidabad-true-says-mamata-banerjee-2431151.html',
+          'https://economictimes.indiatimes.com/news/politics-and-nation/shooter-at-shaheen-bagh-aap-member-claims-delhi-police/articleshow/73949070.cms?from=mdr',
         ],
     },
     img:'/home/ankit/git/proto-react/src/assets/CAA.png',
     timeline: [
         {
-          date: "2018-09-22",
-          content: "The police finally had registered a complaint on 20 Sep. Initially registered as assault and SC/ST Act case, gangrape was later added to the list of charges after the police were able to take an official statement from the victim. In her three recorded statements she mentioned that she was raped and strangulated when she tried to resist. She was later shifted to Safdarjung Hospital after her condition worsened.",
+          date: "2019-12-12",
+          content: "The protests across Assam and much of Northeast India that had started when the CAA bill was tabled in the parliament on 4 December intensified as the bill was passed and assumed the status of an act with the assent of the President. As protestors gathered in Guwahati, 2 people were killed in police firing against the protestors.",
         },
         {
-          date: "2018-09-23",
-          content: "The victim died succumbing to her injuries in Sajdarjung Hospital, New Delhi. The autopsy registered the cause of death as “injury to the cervical spine by blunt force trauma”. The victim was cremated at 2:30am by the UP  Police. The Allahabad High Court took suo moto cognizance of the case asking the victim’s family, the DM and the SP to appear before it.",
+          date: "2019-12-13",
+          content: "",
         },
         {
-          date: "2018-09-24",
-          content: "The police finally had registered a complaint on 20 Sep. Initially registered as assault and SC/ST Act case, gangrape was later added to the list of charges after the police were able to take an official statement from the victim. In her three recorded statements she mentioned that she was raped and strangulated when she tried to resist. She was later shifted to Safdarjung Hospital after her condition worsened.",
+          date: "2019-12-15",
+          content: "After 3 Delhi Transport buses were torched in Jamia Nagar, police forcefully entered the campus of Jamia Millia Islamia and detained students using batons and tear gas in the process. After solidarity protests at Aligarh Muslim University, the police forcefully entered their campus and attacked students. There were allegations that the police also attacked students not part of the protests.",
         },
         {
-          date: "2018-09-25",
-          content: "The victim died succumbing to her injuries in Sajdarjung Hospital, New Delhi. The autopsy registered the cause of death as “injury to the cervical spine by blunt force trauma”. The victim was cremated at 2:30am by the UP  Police. The Allahabad High Court took suo moto cognizance of the case asking the victim’s family, the DM and the SP to appear before it.",
+          date: "2019-12-24",
+          content: "", 
+        },
+        {
+          date: "2020-01-05",
+          content: "",
+        },
+        {
+          date: "2020-01-10",
+          content: "",
+        },
+        {
+          date: "2020-02-01",
+          content: "After the incident at Jamia Millia Islamia on 30 January where a man opened fire at the protests injuring one student, another man fired bullets in the air during the Shaheen Bagh protests. Both situations had the accused allegedly shouting Hindu fundamentalist slogans while perpetrating the gun violence.",
         },
       ],
     id: 12346,
@@ -137,7 +164,7 @@ var news_article2 = {
 
 var news_article3 = {
     headline: 'Sushant Singh Rajput death case and investigation',
-    date: Date(2020, 9, 19),
+    date: Date(2020, 10, 19),
     content:`On 14 June 2020, Indian actor Sushant Singh Rajput was found dead hanging from the ceiling fan at his home in Bandra, 
     Mumbai, India. A team of three doctors submitted a provisional post-mortem with the cause of death mentioned as “asphyxia 
     due to hanging”. A final post-mortem report was received on 25 June. 
@@ -165,31 +192,39 @@ var news_article3 = {
         `Some media sources raised quiestions on the “conclusive” nature of the report submitted by AIIMS to the CBI [4]`
      ],
      links: {
-        name: ['The Wire','Times Now', 'Hindustan Times', 'Scroll'],
+        name: ['The Federal','The FREE PRESS Journal', 'Mumbai Mirror', 'The WIRE'],
         url: [
-                'https://thewire.in/media/misleading-video-hathras-victim-family-funeral',
-                'https://www.timesnownews.com/india/article/hathras-gang-rape-case-adg-claims-police-took-consent-from-victims-family-before-funeral/660546',
-                'https://www.hindustantimes.com/india-news/hathras-gang-rape-case-samples-sent-to-agra-forensic-lab-preliminary-report-doesn-t-confirm-rape-claim-police/story-f22lpDy1a6PMvFrHSPcVqL.html',
-                'https://scroll.in/article/974972/hathras-case-this-is-what-is-wrong-with-the-no-sperm-no-rape-line-being-pushed-by-up-police'
-        ],
+                'https://thefederal.com/news/after-aiims-cbi-finds-no-traces-of-homicide-in-sushants-death/',
+                'https://www.freepressjournal.in/entertainment/bollywood/reports-on-sushant-singh-rajput-case-speculative-and-erroneous-cbi',
+                'https://mumbaimirror.indiatimes.com/entertainment/bollywood/rhea-chakraborty-bail-order-highlights-bombay-high-court-says-she-is-not-part-of-chain-of-drug-dealers/articleshow/78531863.cms',
+                'https://thewire.in/government/aiims-forensic-report-conclusive-findings-sushant-singh-rajput-case-cbi',
+              ],
     },
     img:'/home/ankit/git/proto-react/src/assets/sushant_singh.png',
     timeline: [
         {
-          date: "2018-09-22",
-          content: "The police finally had registered a complaint on 20 Sep. Initially registered as assault and SC/ST Act case, gangrape was later added to the list of charges after the police were able to take an official statement from the victim. In her three recorded statements she mentioned that she was raped and strangulated when she tried to resist. She was later shifted to Safdarjung Hospital after her condition worsened.",
+          date: "2018-06-14",
+          content: "The actor was found dead after friends broke into his room to check. The Mumbai Police commenced an investigation, stating that the death was being treated as suicide. Soon after news of his death, there were several debates sparked around mental health on social media. No suicide note was found from the spot where his body was recovered.",
         },
         {
-          date: "2018-09-23",
-          content: "The victim died succumbing to her injuries in Sajdarjung Hospital, New Delhi. The autopsy registered the cause of death as “injury to the cervical spine by blunt force trauma”. The victim was cremated at 2:30am by the UP  Police. The Allahabad High Court took suo moto cognizance of the case asking the victim’s family, the DM and the SP to appear before it.",
+          date: "2018-07-25",
+          content: "",
         },
         {
-          date: "2018-09-24",
-          content: "The police finally had registered a complaint on 20 Sep. Initially registered as assault and SC/ST Act case, gangrape was later added to the list of charges after the police were able to take an official statement from the victim. In her three recorded statements she mentioned that she was raped and strangulated when she tried to resist. She was later shifted to Safdarjung Hospital after her condition worsened.",
+          date: "2018-08-19",
+          content: "After initial investigation in the FIR by Sushant’s father by the Mumbai Police and the CBI re-registering the Patna FIR thus taking over the case, the Supreme Court ordered the CBI to look into any future cases related to Sushant’s death. There had been clashes between the investigations of Bihar and Mumbai police during this time.",
         },
         {
-          date: "2018-09-25",
-          content: "The victim died succumbing to her injuries in Sajdarjung Hospital, New Delhi. The autopsy registered the cause of death as “injury to the cervical spine by blunt force trauma”. The victim was cremated at 2:30am by the UP  Police. The Allahabad High Court took suo moto cognizance of the case asking the victim’s family, the DM and the SP to appear before it.",
+          date: "2018-08-26",
+          content: "",
+        },
+        {
+          date: "2018-09-09",
+          content: "",
+        },
+        {
+          date: "2020-10-03",
+          content: "It was reported by the media that Dr Sudhir Gupta of AIIMS, leader of the forensic team by CBI declared that Sushant’s death was a suicide and murder had been completely ruled out. Later the CBI clarified that the investigation in Sushant’s death is still continuing and all reports to the contrary are merely speculative at the moment.",
         },
       ],
     id: 12347,
@@ -197,7 +232,7 @@ var news_article3 = {
 
 var news_article4 = {
     headline: 'India becomes 3rd country to report over 1 lakh COVID 19 deaths',
-    date: Date(2020, 9, 19),
+    date: Date(2020, 10, 19),
     content:`Thanks to their discovery, highly sensitive blood tests for the virus are now available and these have essentially eliminated 
     post-transfusion hepatitis in many parts of the world, greatly improving global health, the committee said.
     
@@ -238,36 +273,44 @@ var news_article4 = {
         today.Thanks to their discovery, highly basic science that has laid the foundations for practical applications in`
      ],
      links: {
-        name: ['The Wire','Times Now', 'Hindustan Times', 'Scroll'],
+        name: [''],
         url: [
-                'https://thewire.in/media/misleading-video-hathras-victim-family-funeral',
-                'https://www.timesnownews.com/india/article/hathras-gang-rape-case-adg-claims-police-took-consent-from-victims-family-before-funeral/660546',
-                'https://www.hindustantimes.com/india-news/hathras-gang-rape-case-samples-sent-to-agra-forensic-lab-preliminary-report-doesn-t-confirm-rape-claim-police/story-f22lpDy1a6PMvFrHSPcVqL.html',
-                'https://scroll.in/article/974972/hathras-case-this-is-what-is-wrong-with-the-no-sperm-no-rape-line-being-pushed-by-up-police'
+          ''
         ],
     },
     img:'/home/ankit/git/proto-react/src/assets/covid.jpeg',
     timeline: [
         {
-          date: "2018-09-22",
-          content: "The police finally had registered a complaint on 20 Sep. Initially registered as assault and SC/ST Act case, gangrape was later added to the list of charges after the police were able to take an official statement from the victim. In her three recorded statements she mentioned that she was raped and strangulated when she tried to resist. She was later shifted to Safdarjung Hospital after her condition worsened.",
+          date: "2018-02-01",
+          content: "Thanks to their discovery, highly sensitive blood tests for the virus are now available and these have essentially eliminated post-transfusion hepatitis in many parts of the world, greatly improving global health, the committee said.Their discovery also allowed the rapid development of antiviral drugs directed at hepatitis C, it added. For the first time in history, the disease can now be cured, raising ",
         },
         {
-          date: "2018-09-23",
-          content: "The victim died succumbing to her injuries in Sajdarjung Hospital, New Delhi. The autopsy registered the cause of death as “injury to the cervical spine by blunt force trauma”. The victim was cremated at 2:30am by the UP  Police. The Allahabad High Court took suo moto cognizance of the case asking the victim’s family, the DM and the SP to appear before it.",
+          date: "2018-02-02",
+          content: "",
         },
         {
-          date: "2018-09-24",
-          content: "The police finally had registered a complaint on 20 Sep. Initially registered as assault and SC/ST Act case, gangrape was later added to the list of charges after the police were able to take an official statement from the victim. In her three recorded statements she mentioned that she was raped and strangulated when she tried to resist. She was later shifted to Safdarjung Hospital after her condition worsened.",
+          date: "2018-02-03",
+          content: "Thanks to their discovery, highly sensitive blood tests for the virus are now available and these have essentially eliminated post-transfusion hepatitis in many parts of the world, greatly improving global health, the committee said.Their discovery also allowed the rapid development of antiviral drugs directed at hepatitis C, it added. For the first time in history, the disease can now be cured, raising ",
         },
         {
-          date: "2018-09-25",
-          content: "The victim died succumbing to her injuries in Sajdarjung Hospital, New Delhi. The autopsy registered the cause of death as “injury to the cervical spine by blunt force trauma”. The victim was cremated at 2:30am by the UP  Police. The Allahabad High Court took suo moto cognizance of the case asking the victim’s family, the DM and the SP to appear before it.",
+          date: "2018-02-04",
+          content: "",
+        },
+        {
+          date: "2018-02-05",
+          content: "",
+        },
+        {
+          date: "2018-02-06",
+          content: "",
+        },
+        {
+          date: "2018-02-07",
+          content: "Thanks to their discovery, highly sensitive blood tests for the virus are now available and these have essentially eliminated post-transfusion hepatitis in many parts of the world, greatly improving global health, the committee said.Their discovery also allowed the rapid development of antiviral drugs directed at hepatitis C, it added. For the first time in history, the disease can now be cured, raising ",
         },
       ],
     id: 12348,
 }
 
-// console.log(news_article4.timeline[0].content)
 
 module.exports = {news_article1, news_article2, news_article3, news_article4};

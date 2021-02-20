@@ -22,10 +22,19 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     padding: theme.spacing(2),
-    maxWidth: 1200,
+    maxWidth: 1000,
     maxHeight: 250,
     marginLeft: 100,
     overflow: 'auto'
+
+  },
+  link_paper: {
+    padding: theme.spacing(3),
+    maxWidth: 1000,
+    maxHeight: 250,
+    marginLeft: 100,
+    overflow: 'auto',
+    marginTop: 90,
 
   },
   loginButton: {
@@ -175,7 +184,7 @@ export default function ComplexGrid() {
           </Paper>
         </Grid>
         <Grid item xs={3}>
-          <Paper className={classes.paper}>
+          <Paper className={classes.link_paper} >
             <Typography display='flex'>
             {article.links.name.map((item,index)=>{
               return <li key={index}>
@@ -186,7 +195,7 @@ export default function ComplexGrid() {
           </Paper>
         </Grid>
       </Grid>
-    <Timeline/>
+    <Timeline articleIdx = {4}/>
     </div>
   );
 }
