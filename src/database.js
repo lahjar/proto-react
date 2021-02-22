@@ -30,10 +30,10 @@ var news_article1 = {
     links: {
         name: ['The Wire','Times Now', 'Hindustan Times', 'Scroll'],
         url: [
-                'https://thewire.in/media/misleading-video-hathras-victim-family-funeral',
-                'https://www.timesnownews.com/india/article/hathras-gang-rape-case-adg-claims-police-took-consent-from-victims-family-before-funeral/660546',
-                'https://www.hindustantimes.com/india-news/hathras-gang-rape-case-samples-sent-to-agra-forensic-lab-preliminary-report-doesn-t-confirm-rape-claim-police/story-f22lpDy1a6PMvFrHSPcVqL.html',
-                'https://scroll.in/article/974972/hathras-case-this-is-what-is-wrong-with-the-no-sperm-no-rape-line-being-pushed-by-up-police'
+                'www.thewire.in/media/misleading-video-hathras-victim-family-funeral',
+                'www.timesnownews.com/india/article/hathras-gang-rape-case-adg-claims-police-took-consent-from-victims-family-before-funeral/660546',
+                'www.hindustantimes.com/india-news/hathras-gang-rape-case-samples-sent-to-agra-forensic-lab-preliminary-report-doesn-t-confirm-rape-claim-police/story-f22lpDy1a6PMvFrHSPcVqL.html',
+                'www.scroll.in/article/974972/hathras-case-this-is-what-is-wrong-with-the-no-sperm-no-rape-line-being-pushed-by-up-police'
         ],
     },
     img:'/home/ankit/git/proto-react/src/assets/hathras.png',
@@ -119,13 +119,13 @@ var news_article2 = {
      links: {
         name: ['The Economic Times','REPUBLIC World', 'Scroll', 'Hindustan Times', 'India Today', 'News 18', 'NDTV'],
         url: [
-          'https://economictimes.indiatimes.com/news/politics-and-nation/caa-protests-in-assam-why-it-is-different-from-the-rest-of-the-country/articleshow/72844673.cms?from=mdr',
-          'https://www.republicworld.com/india-news/general-news/protestors-set-bus-on-fire-delhi-police-pro-says-on-jamia-violence.html',
-          'https://scroll.in/article/946933/delhi-police-were-uncontrollable-as-they-unleashed-violence-at-jamia-millia-islamia-students-say',
-          'https://www.hindustantimes.com/delhi-news/10-arrested-in-connection-with-jamia-violence-no-students-among-them-say-delhi-police/story-c6O2OdCfRHRpggH4IoTzwK.html',
-          'https://www.indiatoday.in/mail-today/story/citizenship-protests-spread-to-bengal-protesters-torch-5-trains-3-railway-stations-damage-property-1628370-2019-12-15',
-          'https://www.news18.com/news/politics/reports-of-bjp-supporters-changing-clothes-to-attack-train-in-murshidabad-true-says-mamata-banerjee-2431151.html',
-          'https://economictimes.indiatimes.com/news/politics-and-nation/shooter-at-shaheen-bagh-aap-member-claims-delhi-police/articleshow/73949070.cms?from=mdr',
+          'www.economictimes.indiatimes.com/news/politics-and-nation/caa-protests-in-assam-why-it-is-different-from-the-rest-of-the-country/articleshow/72844673.cms?from=mdr',
+          'www.republicworld.com/india-news/general-news/protestors-set-bus-on-fire-delhi-police-pro-says-on-jamia-violence.html',
+          'www.scroll.in/article/946933/delhi-police-were-uncontrollable-as-they-unleashed-violence-at-jamia-millia-islamia-students-say',
+          'www.hindustantimes.com/delhi-news/10-arrested-in-connection-with-jamia-violence-no-students-among-them-say-delhi-police/story-c6O2OdCfRHRpggH4IoTzwK.html',
+          'www.indiatoday.in/mail-today/story/citizenship-protests-spread-to-bengal-protesters-torch-5-trains-3-railway-stations-damage-property-1628370-2019-12-15',
+          'www.news18.com/news/politics/reports-of-bjp-supporters-changing-clothes-to-attack-train-in-murshidabad-true-says-mamata-banerjee-2431151.html',
+          'www.economictimes.indiatimes.com/news/politics-and-nation/shooter-at-shaheen-bagh-aap-member-claims-delhi-police/articleshow/73949070.cms?from=mdr',
         ],
     },
     img:'/home/ankit/git/proto-react/src/assets/CAA.png',
@@ -194,10 +194,10 @@ var news_article3 = {
      links: {
         name: ['The Federal','The FREE PRESS Journal', 'Mumbai Mirror', 'The WIRE'],
         url: [
-                'https://thefederal.com/news/after-aiims-cbi-finds-no-traces-of-homicide-in-sushants-death/',
-                'https://www.freepressjournal.in/entertainment/bollywood/reports-on-sushant-singh-rajput-case-speculative-and-erroneous-cbi',
-                'https://mumbaimirror.indiatimes.com/entertainment/bollywood/rhea-chakraborty-bail-order-highlights-bombay-high-court-says-she-is-not-part-of-chain-of-drug-dealers/articleshow/78531863.cms',
-                'https://thewire.in/government/aiims-forensic-report-conclusive-findings-sushant-singh-rajput-case-cbi',
+                'www.thefederal.com/news/after-aiims-cbi-finds-no-traces-of-homicide-in-sushants-death/',
+                'www.freepressjournal.in/entertainment/bollywood/reports-on-sushant-singh-rajput-case-speculative-and-erroneous-cbi',
+                'www.mumbaimirror.indiatimes.com/entertainment/bollywood/rhea-chakraborty-bail-order-highlights-bombay-high-court-says-she-is-not-part-of-chain-of-drug-dealers/articleshow/78531863.cms',
+                'www.thewire.in/government/aiims-forensic-report-conclusive-findings-sushant-singh-rajput-case-cbi',
               ],
     },
     img:'/home/ankit/git/proto-react/src/assets/sushant_singh.png',

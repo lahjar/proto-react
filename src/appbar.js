@@ -108,14 +108,14 @@ export default function Appbar() {
         <div className={classes.root}>
         <AppBar position="static" color='inherit' elevation={0}>
           <Toolbar>
-            <IconButton
+            {/* <IconButton
               edge="start"
               className={classes.menuButton}
               color="inherit"
               aria-label="open drawer"
             >
               <MenuIcon />
-            </IconButton>
+            </IconButton> */}
             <Typography className={classes.title} variant="h6" noWrap>
             <Link to="./" style={{textDecoration: 'inherit', color: 'black'}}>
                 {'VERITAS'}
@@ -145,7 +145,7 @@ export default function Appbar() {
                   onChange={handleChange}
                 >
                   <MenuItem value={10}>English</MenuItem>
-                  <MenuItem value={20}>Hindi</MenuItem>
+                  {/* <MenuItem value={20}>Hindi</MenuItem> */}
                 </Select>
                 <FormHelperText></FormHelperText>
               </FormControl>

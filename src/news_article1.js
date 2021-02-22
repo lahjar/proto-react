@@ -29,9 +29,8 @@ const useStyles = makeStyles((theme) => ({
 
   },
   link_paper: {
-    padding: theme.spacing(3),
-    maxWidth: 1000,
-    maxHeight: 250,
+    flexGrow: 1,
+    padding: theme.spacing(1),
     marginLeft: 100,
     overflow: 'auto',
     marginTop: 90,
@@ -186,11 +185,13 @@ export default function ComplexGrid() {
         <Grid item xs={3}>
           <Paper className={classes.link_paper} >
             <Typography display='flex'>
+            <ol>
             {article.links.name.map((item,index)=>{
               return <li key={index}>
-                <Link color='inherit' to={article.links.url[index]}>{article.links.name[index]}</Link>
+                <Link color='inherit' to={'\\' + article.links.url[index]} target="_blank">{article.links.name[index]}</Link>
               </li>
              })}
+             </ol>
             </Typography>
           </Paper>
         </Grid>
